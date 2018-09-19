@@ -21,10 +21,14 @@
 	//$aluno->insert();
 
 	// Atualizando usuário
+	//$aluno = new Usuario();
+	//$aluno->getUsuarioById(40);
+	//$aluno->update("jetao", "fon123");
+
+	// Apagando usuário
 	$aluno = new Usuario();
 	$aluno->getUsuarioById(40);
-	$aluno->update("jetao", "fon123");
-
+	$aluno->delete();
 
 	echo $aluno;
 ?>
