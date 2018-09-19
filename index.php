@@ -12,8 +12,19 @@
 	//$usuarios = Usuario::getUsuariosByLogin("gui");
 
 	// Carrega um usuário usando o login e a senha
-	$usuario = new Usuario();
-	$usuario->login("guilherme", "1234mudar");
+	//$usuario = new Usuario();
+	//$usuario->login("guilherme", "1234mudar");
 
-	echo $usuario;
+	// Insere aluno novo
+	//$aluno = new Usuario("aluno", "@lun0");
+
+	//$aluno->insert();
+
+	// Atualizando usuário
+	$aluno = new Usuario();
+	$aluno->getUsuarioById(40);
+	$aluno->update("jetao", "fon123");
+
+
+	echo $aluno;
 ?>
